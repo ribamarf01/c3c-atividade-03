@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Questões C3C</title>
+</head>
+
+<body>
+
+	<main class="container">
+		
+		<form action="#" class="form">
+			<span>Questão 1 - Tipos de triângulo</span>
+
+			<input type="text" placeholder="Digite o valor do lado 1" id="lado_1">
+			<input type="text" placeholder="Digite o valor do lado 2" id="lado_2">
+			<input type="text" placeholder="Digite o valor do lado 3" id="lado_3">
+
+			<button type="button" onclick="calcularTriangulo()">Calcular triângulo</button>
+
+			<div class="response_area">
+				<span>Resposta: </span>
+				<span class="" id="resposta_1"></span>
+			</div>
+		</form>
+
+		<form action="#" class="form">
+			<span>Questão 2 - Bhaskara</span>
+
+			<input type="text" placeholder="Digite o valor de a" id="a">
+			<input type="text" placeholder="Digite o valor de b" id="b">
+			<input type="text" placeholder="Digite o valor de c" id="c">
+
+			<button type="button" onclick="calcularRaizes()">Calcular raízes</button>
+
+			<div class="response_area">
+				<span>Resposta: </span>
+				<span class="" id="resposta_2"></span>
+			</div>
+		</form>
+
+		<form action="#" class="form">
+			<span>Questão 3 - Sistema de notas</span>
+
+			<input type="text" placeholder="Digite a nota do aluno" id="nota">
+
+			<button type="button" onclick="calcularNota()">Calcular nota</button>
+
+			<div class="response_area">
+				<span>Resposta: </span>
+				<span class="" id="resposta_3"></span>
+			</div>
+		</form>
+
+		<form action="#" class="form">
+			<span>Questão 04 - LuidyMoura</span>
+
+			<input type="text" placeholder="Digite o número alvo" id="alvo">
+
+			<button type="button" onclick="trocarValores()">Luidy Moura</button>
+
+			<div class="response_area">
+				<span>Resposta: </span>
+				<ul class="response" id="resposta_4"></ul>
+			</div>
+		</form>
+
+	</main>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
