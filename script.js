@@ -7,6 +7,12 @@ function calcularTriangulo() {
 	// Resposta prepara o lugar aonde sera colocado a resposta
 	const resposta = document.getElementById("resposta_1")
 
+	// Testa se existe algum lado inválido
+	if(lado1 <= 0 || lado2 <= 0 || lado3 <= 0) {
+		resposta.innerHTML = "Atenção, um dos lados inseridos é invalido"
+		return
+	}
+
 	if(lado1 === lado2 && lado2 === lado3) { // Testa se todos os lados são iguais
 		resposta.innerHTML = "Equilátero: Os três lados são iguais."
 	} else if(lado1 === lado2 || lado2 === lado3 || lado3 === lado1) { // Testa se o triangulo possui dois lados iguais, não precisa testar se são todos iguais pois foi testado anteriormente
@@ -56,6 +62,12 @@ function calcularNota() {
 
 	// Resposta prepara o lugar aonde sera colocado a resposta
 	const resposta = document.getElementById("resposta_3")
+
+	// Verifica se a nota está no invervalo de 0 a 100
+	if(nota < 0 || nota > 100) {
+		resposta.innerHTML = "Um valor inválido foi inserido"
+		return 
+	}
 
 	// Checa quanto é necessário para arredondar para o divisor de 5 mais próximo
 	// A função round tenta arredondar pra cima o valor.
